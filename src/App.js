@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Header.js';
+import Home from './Home.js'
+import Schedule from './Schedule.js'
+import Ratings from './Ratings.js'
+import './app.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+	constructor(props){
+		super(props)
+		this.toggleHome = this.toggleHome.bind(this)
+		this.toggleSchedule = this.toggleSchedule.bind(this)
+		this.toggleRatings = this.toggleRatings.bind(this)
+		this.state={
+			key: this.props.id,
+			toggleHome: true,
+			toggleSchedule: false,
+			toggleRatings: false
+		}
+	}
+
+toggleHome(){
+	this.setState({toggleHome: true})
+	this.setState({toggleSchedule: false})
+	this.setState({toggleRatings: false})
+}
+toggleSchedule(){
+	this.setState({toggleSchedule: true})
+	this.setState({toggleHome: false})
+	this.setState({toggleRatings: false})
+}
+toggleRatings(){
+	this.setState({toggleRatings: true})
+	this.setState({toggleHome: false})
+	this.setState({toggleSchedule: false})
+}
+
+	render(){
+		return(
+			<div className="app">
+				<Header toggleHome = {this.toggleHome} toggleSchedule = {this.toggleSchedule} toggleRatings = {this.toggleRatings}/>
+				{this.state.toggleHome ? (<div><Home /></div>) : this.state.toggleSchedule ? (<div><Schedule /></div>) : this.state.toggleRatings ? (<div><Ratings /></div>) : null}
+			</div>
+		)
+	}
 }
 
 export default App;
