@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header.js';
+import NavBar from './NavBar.js';
 import Home from './Home.js'
 import Schedule from './Schedule.js'
 import Ratings from './Ratings.js'
@@ -38,7 +38,8 @@ toggleRatings(){
 	render(){
 		return(
 			<div className="app">
-				<Header toggleHome = {this.toggleHome} toggleSchedule = {this.toggleSchedule} toggleRatings = {this.toggleRatings}/>
+				<NavBar toggleHome = {this.toggleHome} toggleSchedule = {this.toggleSchedule} toggleRatings = {this.toggleRatings}
+				togSched={this.state.toggleSchedule} togRate={this.state.toggleRatings} togHome={this.state.toggleHome} />
 				{this.state.toggleHome ? (<div><Home /></div>) : this.state.toggleSchedule ? (<div><Schedule /></div>) : this.state.toggleRatings ? (<div><Ratings /></div>) : null}
 			</div>
 		)
