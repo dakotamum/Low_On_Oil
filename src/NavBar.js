@@ -25,6 +25,9 @@ class Header extends React.Component{
                     <div className="single_tab" onClick={this.props.toggleRatings} style={this.props.togRate ? {backgroundColor: 'white', color: 'black'} : null}>
                         Reviews
                     </div>
+                    <div className="single_tab" onClick={this.props.toggleLogin} style={this.props.togLog ? {backgroundColor: 'white', color: 'black'} : null}>
+                        Login
+                    </div>
                 </div>
             </div>
         )}
