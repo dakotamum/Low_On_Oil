@@ -3,8 +3,8 @@
 // if the repo is public
 // You could optionally use .env file to store these data
 
-import Rebase from 're-base';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import "firebase/auth"
 
 const firebaseConfig = {
     apiKey: "AIzaSyAPRA_Ry1vNwaa2EOas65vITYtOr5eSXII",
@@ -17,6 +17,6 @@ const firebaseConfig = {
   };
 
 const app = firebase.initializeApp(firebaseConfig)
-const base = Rebase.createClass(app.database())
 
-export { base }
+export const auth = app.auth()
+export default app
