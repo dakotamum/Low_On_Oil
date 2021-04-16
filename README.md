@@ -3,6 +3,9 @@
 	* Schedule oil change page
 	* logo
 	* Reviews page
+# Command for installing firebase
+
+### `npm install --save firebase`
 
 # Getting Started with Create React App
 
