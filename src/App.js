@@ -4,6 +4,8 @@ import Home from './Home.js'
 import Schedule from './Schedule.js'
 import Ratings from './Ratings.js'
 import Login from './Login.js'
+import Signup from './Signup.js'
+import { Container } from 'react-bootstrap'
 import { base } from './firebase/firebaseConfig.js'
 import './app.css';
 
