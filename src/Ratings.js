@@ -11,7 +11,7 @@ class Ratings extends React.Component{
     render(){
         return(
             <div className="ratings">
-                <h1>Ratings Page</h1>
+                <h1>Reviews Page</h1>
             </div>
         )}
 }

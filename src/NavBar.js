@@ -12,7 +12,7 @@ class Header extends React.Component{
     render(){
         return(
             <div className="navbar">
-                <div className="logo">
+                <div className="logo" onClick={this.props.toggleHome}>
                     Low on Oil
                 </div>
                 <div className="tabs">
@@ -23,7 +23,7 @@ class Header extends React.Component{
                         Schedule
                     </div>
                     <div className="single_tab" onClick={this.props.toggleRatings} style={this.props.togRate ? {backgroundColor: 'white', color: 'black'} : null}>
-                        Ratings
+                        Reviews
                     </div>
                 </div>
             </div>
