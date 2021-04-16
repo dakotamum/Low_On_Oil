@@ -3,6 +3,7 @@ import NavBar from './NavBar.js';
 import Home from './Home.js'
 import Schedule from './Schedule.js'
 import Ratings from './Ratings.js'
+import { base } from './firebase/firebaseConfig.js'
 import './app.css';
 
 class App extends React.Component{
@@ -19,21 +20,23 @@ class App extends React.Component{
 		}
 	}
 
-toggleHome(){
-	this.setState({toggleHome: true})
-	this.setState({toggleSchedule: false})
-	this.setState({toggleRatings: false})
-}
-toggleSchedule(){
-	this.setState({toggleSchedule: true})
-	this.setState({toggleHome: false})
-	this.setState({toggleRatings: false})
-}
-toggleRatings(){
-	this.setState({toggleRatings: true})
-	this.setState({toggleHome: false})
-	this.setState({toggleSchedule: false})
-}
+	toggleHome(){
+		this.setState({toggleHome: true})
+		this.setState({toggleSchedule: false})
+		this.setState({toggleRatings: false})
+	}
+
+	toggleSchedule(){
+		this.setState({toggleSchedule: true})
+		this.setState({toggleHome: false})
+		this.setState({toggleRatings: false})
+	}
+
+	toggleRatings(){
+		this.setState({toggleRatings: true})
+		this.setState({toggleHome: false})
+		this.setState({toggleSchedule: false})
+	}
 
 	render(){
 		return(
