@@ -17,8 +17,8 @@ import NavBar from './NavBar';
 class App extends React.Component{
 	render(){
 		return(
-		<Container className="d-flex" style={{ minHeight: "100vh"}}>
-			<div className="w-100" style={{ maxWidth: "400px" }}>
+		<Container>
+			<div>
 				<Router>
 					<NavBar/>
 					<AuthProvider>
