@@ -2,7 +2,7 @@
     --primary: #fff;
   }
   
-  .btn {
+  .btn1 {
     padding: 8px 20px;
     border-radius: 2px;
     outline: none;
@@ -20,8 +20,10 @@
     background-color: transparent;
     color: #fff;
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: 1px solid white;
     transition: all 0.3s ease-out;
+    position: absolute;
+    top: 15px;
   }
   
   .btn--medium {

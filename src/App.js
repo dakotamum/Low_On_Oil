@@ -19,19 +19,21 @@ class App extends React.Component{
 			<>
 				<Router>
 					<NavBar/>
-					<Container>
-						<AuthProvider>
-							<Switch>
-								<Route path="/" exact />
-								<PrivateRoute exact path ="/dashboard" component={Dashboard} />
-								<PrivateRoute exact path ="/update-profile" component={UpdateProfile} />
-								<Route path="/signup" component={Signup} />
-								<Route path="/login" component={Login} />
-								<Route path="/forgot-password" component={ForgotPassword} />
-								<Route path="/schedule" component={Schedule} />
-								<Route path="/reviews" component={Reviews} />
-							</Switch>
-						</AuthProvider>
+					<Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
+						<div className="w-100" style={{ maxWidth: "400px"}}>
+							<AuthProvider>
+								<Switch>
+									<Route path="/" exact />
+									<PrivateRoute exact path ="/dashboard" component={Dashboard} />
+									<PrivateRoute exact path ="/update-profile" component={UpdateProfile} />
+									<Route path="/signup" component={Signup} />
+									<Route path="/login" component={Login} />
+									<Route path="/forgot-password" component={ForgotPassword} />
+									<Route path="/schedule" component={Schedule} />
+									<Route path="/reviews" component={Reviews} />
+								</Switch>
+							</AuthProvider>
+						</div>
 					</Container>
 				</Router>
 			</>
