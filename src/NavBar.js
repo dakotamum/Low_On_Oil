@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-import { Navbar } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button'
 import './navbar.css'
 
-export default function NavBar() {
+function NavBar() {
     const [click, setClick] = useState(false)
     const [button, setButton] = useState(true)
 
@@ -19,13 +18,18 @@ export default function NavBar() {
         }
     }
 
+    useEffect(() => {
+        showButton()
+
+    }, [])
+
     window.addEventListener('resize', showButton)
 
     return (
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                         Low On Oil  <i className="fas fa-oil-can" />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
@@ -47,7 +51,7 @@ export default function NavBar() {
                                 Reviews
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li>
                             <Link to="/signup" className="nav-links-mobile" onClick={closeMobileMenu}>
                                 Sign Up
                             </Link>
@@ -59,3 +63,5 @@ export default function NavBar() {
         </>
     )
 }
+
+export default NavBar;
