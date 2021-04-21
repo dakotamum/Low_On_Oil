@@ -16,21 +16,25 @@ import './app.css';
 class App extends React.Component{
 	render(){
 		return(
+			<>
 				<Router>
 					<NavBar/>
-					<AuthProvider>
-						<Switch>
-							<Route path="/" exact />
-							<PrivateRoute exact path ="/dashboard" component={Dashboard} />
-							<PrivateRoute exact path ="/update-profile" component={UpdateProfile} />
-							<Route path="/signup" component={Signup} />
-							<Route path="/login" component={Login} />
-							<Route path="/forgot-password" component={ForgotPassword} />
-							<Route path="/schedule" component={Schedule} />
-							<Route path="/reviews" component={Reviews} />
-						</Switch>
-					</AuthProvider>
+					<Container>
+						<AuthProvider>
+							<Switch>
+								<Route path="/" exact />
+								<PrivateRoute exact path ="/dashboard" component={Dashboard} />
+								<PrivateRoute exact path ="/update-profile" component={UpdateProfile} />
+								<Route path="/signup" component={Signup} />
+								<Route path="/login" component={Login} />
+								<Route path="/forgot-password" component={ForgotPassword} />
+								<Route path="/schedule" component={Schedule} />
+								<Route path="/reviews" component={Reviews} />
+							</Switch>
+						</AuthProvider>
+					</Container>
 				</Router>
+			</>
 		)
 	}
 }
