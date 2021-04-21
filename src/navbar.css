@@ -1,5 +1,3 @@
-/* From https://github.com/NeoLee-0435748/react-tutorial-with-briancodex/blob/main/src/components/Navbar.css */
-
 .navbar {
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     height: 80px;
@@ -31,7 +29,7 @@
     align-items: center;
   }
   
-  .fa-oil.can {
+  .fa-typo3 {
     margin-left: 0.5rem;
     font-size: 1.8rem;
   }
@@ -104,7 +102,7 @@
   
     .nav-links {
       text-align: center;
-      padding-top: 2.5rem;
+      padding: 2rem;
       width: 100%;
       display: table;
     }

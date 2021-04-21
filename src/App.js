@@ -10,15 +10,12 @@ import ForgotPassword from './ForgotPassword'
 import UpdateProfile from './UpdateProfile'
 import Schedule from './Schedule'
 import Reviews from './Reviews'
-import Navbar from './NavBar'
+import NavBar from './NavBar'
 import './app.css';
-import NavBar from './NavBar';
 
 class App extends React.Component{
 	render(){
 		return(
-		<Container>
-			<div>
 				<Router>
 					<NavBar/>
 					<AuthProvider>
@@ -34,8 +31,6 @@ class App extends React.Component{
 						</Switch>
 					</AuthProvider>
 				</Router>
-			</div>
-		</Container>
 		)
 	}
 }
