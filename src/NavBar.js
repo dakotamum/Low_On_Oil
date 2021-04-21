@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Navbar } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { Button } from './Button.js'
+import { Button } from './Button'
 import './navbar.css'
 
 export default function NavBar() {
