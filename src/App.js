@@ -11,6 +11,7 @@ import UpdateProfile from './UpdateProfile'
 import Schedule from './Schedule'
 import Reviews from './Reviews'
 import NavBar from './NavBar'
+import Home from './Home'
 import './app.css';
 
 class App extends React.Component{
@@ -23,7 +24,7 @@ class App extends React.Component{
 						<div className="w-100" style={{ maxWidth: "400px"}}>
 							<AuthProvider>
 								<Switch>
-									<Route path="/" exact />
+									<Route path="/" exact component={Home}/>
 									<PrivateRoute exact path ="/dashboard" component={Dashboard} />
 									<PrivateRoute exact path ="/update-profile" component={UpdateProfile} />
 									<Route path="/signup" component={Signup} />

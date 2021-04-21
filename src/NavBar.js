@@ -20,7 +20,6 @@ function NavBar() {
 
     useEffect(() => {
         showButton()
-
     }, [])
 
     window.addEventListener('resize', showButton)
