@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import PrivateRoute from './PrivateRoute'
 import ForgotPassword from './ForgotPassword'
 import UpdateProfile from './UpdateProfile'
+import Schedule from './Schedule'
+import Reviews from './Reviews'
 import './app.css';
 
 class App extends React.Component{
@@ -23,6 +25,8 @@ class App extends React.Component{
 							<Route path="/signup" component={Signup} />
 							<Route path="/login" component={Login} />
 							<Route path="/forgot-password" component={ForgotPassword} />
+							<Route path="/schedule" component={Schedule} />
+							<Route path="/reviews" component={Reviews} />
 						</Switch>
 					</AuthProvider>
 				</Router>
