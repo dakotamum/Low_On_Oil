@@ -8,17 +8,21 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import PrivateRoute from './PrivateRoute'
 import ForgotPassword from './ForgotPassword'
 import UpdateProfile from './UpdateProfile'
+import Navbar from './NavBar'
 import './app.css';
+import NavBar from './NavBar';
 
 class App extends React.Component{
 	render(){
 		return(
-		<Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh"}}>
+		<Container className="d-flex" style={{ minHeight: "100vh"}}>
 			<div className="w-100" style={{ maxWidth: "400px" }}>
 				<Router>
+					<NavBar/>
 					<AuthProvider>
 						<Switch>
-							<PrivateRoute exact path ="/" component={Dashboard} />
+							<Route path="/" exact />
+							<PrivateRoute exact path ="/dashboard" component={Dashboard} />
 							<PrivateRoute exact path ="/update-profile" component={UpdateProfile} />
 							<Route path="/signup" component={Signup} />
 							<Route path="/login" component={Login} />
