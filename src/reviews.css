@@ -1,3 +1,5 @@
 .reviews{
-    background-color: limegreen;
+    border: solid black 2px;
+    width: 500px;
+    background-color: royalblue;
 }

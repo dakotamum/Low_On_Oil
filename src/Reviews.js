@@ -1,10 +1,11 @@
 import React from 'react'
+import Rating from './Rating'
 import './reviews.css'
 
-export default function Ratings() {
+export default function Reviews() {
     return (
         <div className='reviews'>
-            This is a great ratings page!
+            <Rating />
         </div>
     )
 }
