@@ -1,5 +1,6 @@
 .reviews{
-    border: solid black 2px;
-    width: 500px;
-    background-color: royalblue;
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    height: 700px;
+    width: 700px;
 }
