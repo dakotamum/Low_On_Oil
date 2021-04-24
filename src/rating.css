@@ -1,0 +1,42 @@
+.rating{
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: magenta;
+}
+
+.left-wrapper{
+    float: left;
+    text-align: center;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.username{
+    border: dashed 1px black;
+    margin-bottom: 5px;
+    min-width: 120px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.stars{
+    border: dashed 1px black;
+    margin-top: 5px;
+}
+
+.right-wrapper{
+    margin: auto;
+    margin-left: 5px;
+}
+
+.review-text{
+    border: dashed 1px black;
+    text-align: left;
+    font-family: 'Fredoka One', cursive;
+}
