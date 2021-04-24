@@ -9,6 +9,7 @@ import "firebase/auth"
 const firebaseConfig = {
     apiKey: "AIzaSyAPRA_Ry1vNwaa2EOas65vITYtOr5eSXII",
     authDomain: "low-on-oil.firebaseapp.com",
+    databaseURL: "https://low-on-oil-default-rtdb.firebaseio.com/",
     projectId: "low-on-oil",
     storageBucket: "low-on-oil.appspot.com",
     messagingSenderId: "2740812149",
