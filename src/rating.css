@@ -7,8 +7,6 @@
     display: flex;
     margin-top: 10px;
     box-shadow: 5px 5px 5px grey;
-    background-color: magenta;
-    color: lime;
 }
 
 .left-wrapper{
@@ -17,7 +15,6 @@
     margin: auto;
     margin-left: 5px;
     margin-right: 5px;
-    color: lime;
 }
 
 .username{
@@ -25,24 +22,20 @@
     margin-bottom: 5px;
     min-width: 120px;
     font-family: 'Fredoka One', cursive;
-    color: lime;
 }
 
 .stars{
     border: dashed 1px black;
     margin-top: 5px;
-    color: lime;
 }
 
 .right-wrapper{
     margin: auto;
     margin-left: 5px;
-    color: lime;
 }
 
 .review-text{
     border: dashed 1px black;
     text-align: left;
     font-family: 'Fredoka One', cursive;
-    color: lime;
 }

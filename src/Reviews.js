@@ -1,13 +1,62 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Rating from './Rating'
+import firebase from './firebase/firebaseConfig'
 import './reviews.css'
 
 export default function Reviews() {
+
+    var [username, setUser] = useState('');
+    var [stars, setStars] = useState('');
+    var [reviewtext, setReview] = useState('');
+
+    const handleUsernameOnChange = (e) => {
+        setUser(e.target.value);
+    };
+    const handleStarsOnChange = (e) => {
+        setStars(e.target.value);
+    };
+    const handleReviewOnChange = (e) => {
+        setReview(e.target.value);
+    };
+
+    const createReview = () =>{
+        const todoRef = firebase.database().ref("Review")
+        const todo = {
+            username,
+            stars,
+            reviewtext
+        }
+        todoRef.push(todo)
+        setUser('')
+        setStars('')
+        setReview('')
+    };
+
     return (
-        <div className='reviews'>
-            Look at our great reviews!
-            <Rating username="unicorndog" stars="3" ratingtext="Wow what a terrible place to eat."/>
-            <Rating username="emdawg" stars="1" ratingtext="I'm disappointed in the lack of oil variety. I am strictly vegan and was startled that this company does not offer natural, organic peanut oil."/>
+        <div>
+            <div className='reviews'>
+                Look at our great reviews!
+                <Rating username="unicorndog" stars="3" ratingtext="Wow what a terrible place to eat."/>
+                <Rating username="emdawg" stars="1" ratingtext="I'm disappointed in the lack of oil variety. I am strictly vegan and was startled that this company does not offer natural, organic peanut oil."/>
+                <div className="reviewsubmition">
+                    Leave us a review!
+                    <br></br>
+                    <br></br>
+                    User:
+                    <br></br>
+                    <input type="text" onChange={handleUsernameOnChange} value={username}></input>
+                    <br></br>
+                    Stars:
+                    <br></br>
+                    <input type="text" name="stars" onChange={handleStarsOnChange} value={stars}></input>
+                    <br></br>
+                    Tell us about your experience:
+                    <br></br>
+                    <input type="text" onChange={handleReviewOnChange} value={reviewtext}></input>
+                    <br></br>
+                    <button onClick={createReview}>Submit</button>
+                </div>
+            </div>
         </div>
     )
 }
