@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from 'react-bootstrap'
 import './rating.css'
 
 export default function Rating(props) {
@@ -15,20 +16,22 @@ export default function Rating(props) {
     }
 
     return (
-        <div className="rating">
-            <div className="left-wrapper">
-                <div className="username">
-                    {props.username}
+        <Card className="rating">
+            <div>
+                <div className="left-wrapper">
+                    <div className="username">
+                        {props.username}
+                    </div>
+                    <div className="stars">
+                        {stars}
+                    </div>
                 </div>
-                <div className="stars">
-                    {stars}
+                <div className="right-wrapper">
+                    <div className="review-text">
+                        {props.ratingtext} 
+                    </div>
                 </div>
             </div>
-            <div className="right-wrapper">
-                <div className="review-text">
-                    {props.ratingtext} 
-                </div>
-            </div>
-        </div>
+        </Card>
     )
 }

@@ -6,7 +6,7 @@
     font-size: 20px;
     display: flex;
     margin-top: 10px;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 3px 3px 3px grey;
 }
 
 .left-wrapper{
@@ -20,7 +20,6 @@
 .username{
     margin-bottom: 5px;
     min-width: 120px;
-    font-family: 'Fredoka One', cursive;
 }
 
 .stars{
@@ -34,5 +33,4 @@
 
 .review-text{
     text-align: left;
-    font-family: 'Fredoka One', cursive;
 }

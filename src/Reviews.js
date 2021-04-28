@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {useEffect} from 'react'
 import Rating from './Rating'
 import firebase from './firebase/firebaseConfig'
+import { Card } from 'react-bootstrap'
 import './reviews.css'
 
 export default function Reviews() {
@@ -55,7 +56,7 @@ export default function Reviews() {
                 {reviewsList ? reviewsList.map((review)=>(
                     <Rating username = {review.username} stars = {review.stars} ratingtext = {review.reviewtext}/>
                 )) : ''}
-                <div className="reviewsubmition">
+                <Card className="reviewsubmition">
                     Leave us a review!
                     <br></br>
                     <br></br>
@@ -72,7 +73,7 @@ export default function Reviews() {
                     <input type="text" onChange={handleReviewOnChange} value={reviewtext}></input>
                     <br></br>
                     <button onClick={createReview}>Submit</button>
-                </div>
+                </Card>
             </div>
         </div>
     )
