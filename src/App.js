@@ -12,7 +12,7 @@ import Schedule from './Schedule'
 import Reviews from './Reviews'
 import NavBar from './NavBar'
 import Home from './Home'
-import './app.css';
+import './App.css';
 
 class App extends React.Component{
 	render(){
