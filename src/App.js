@@ -13,7 +13,7 @@ import Reviews from './Reviews'
 import NavBar from './NavBar'
 import Admin from './Admin'
 import Home from './Home'
-import './App.css';
+import './app.css';
 
 class App extends React.Component{
 	render(){
