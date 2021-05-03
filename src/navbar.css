@@ -47,6 +47,11 @@
     height: 80px;
   }
   
+  .nav-item-hidden {
+    height: 80px;
+    display: none;
+  }
+  
   .nav-links {
     color: #fff;
     display: flex;
