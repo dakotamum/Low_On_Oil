@@ -11,8 +11,9 @@ import UpdateProfile from './UpdateProfile'
 import Schedule from './Schedule'
 import Reviews from './Reviews'
 import NavBar from './NavBar'
+import Admin from './Admin'
 import Home from './Home'
-import './app.css';
+import './App.css';
 
 class App extends React.Component{
 	render(){
@@ -32,6 +33,7 @@ class App extends React.Component{
 									<Route path="/forgot-password" component={ForgotPassword} />
 									<Route path="/schedule" component={Schedule} />
 									<Route path="/reviews" component={Reviews} />
+									<Route path="/admin" component={Admin} />
 								</Switch>
 							</AuthProvider>
 						</div>

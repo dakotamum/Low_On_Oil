@@ -4,6 +4,8 @@ import { Button } from './Button.js'
 import './navbar.css'
 
 function NavBar() {
+    // check to see if the user is the admin or not.
+    let admin = false
     const [click, setClick] = useState(false)
     const [button, setButton] = useState(true)
 
@@ -38,6 +40,11 @@ function NavBar() {
                         <li className="nav-item">
                             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                                 Home
+                            </Link>
+                        </li>
+                        <li className={admin ?  "nav-item-hidden" : "nav-item"}>
+                            <Link to="/admin" className="nav-links" onClick={closeMobileMenu}>
+                                Admin
                             </Link>
                         </li>
                         <li className="nav-item">
