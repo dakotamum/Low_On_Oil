@@ -6,8 +6,8 @@ import Calendar from './Calendar'
 export default function Schedule() {
     return (
         <div>
-            <Calendar />
             <h2>Schedule Your Oil Change Here!</h2>
+            <Calendar />
             <img src={asians}/>
         </div>
     )

@@ -1,17 +1,24 @@
 import React from 'react'
+import { ToastBody } from 'react-bootstrap'
 import './calendar.css'
 
 class Calendar extends React.Component{
     constructor(props){
+        var today = new Date();
+        var monthNumber = today.getMonth();
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "September", "October", "November", "December"];
+        var currentMonthName = monthNames[monthNumber];
+        
         super(props)
         this.state={
+            currentMonth: currentMonthName
         }
     }
 
     render(){
         return(
             <div className="calendar-wrapper">
-                <div className="month">Some Month</div>
+                <div className="month">{this.state.currentMonth}</div>
                 <div className="calendar">
                     <div className="weekday">S</div>
                     <div className="weekday">M</div>

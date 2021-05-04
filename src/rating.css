@@ -22,7 +22,7 @@
 .username{
     padding: 5px;
     margin-bottom: 5px;
-    min-width: 120px;
+    width: 150px;
     background-color: turquoise;
     border: solid black 1px;
     border-radius: 5px;
