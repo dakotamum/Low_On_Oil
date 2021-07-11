@@ -1,0 +1,46 @@
+.schedule-form-page{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.schedule-form{
+    background-color: whitesmoke;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: solid black 2px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.header{
+    background-color: aqua;
+    color: black;
+    margin: 10px;
+    border: solid black 2px;
+}
+
+.customer-select-appointments{
+    display: flex;
+}
+
+.button-wrapper{
+    display: flex;
+    padding: 10px;
+}
+
+.button{
+    width: 25%;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.button:hover{
+    background-color: yellow;
+}

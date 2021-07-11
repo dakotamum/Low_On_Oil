@@ -51,13 +51,11 @@ export default function Reviews() {
         <div>
             <div className='reviews'>
                 Look at our great reviews!
-                <Rating username="unicorndog" stars="3" ratingtext="Wow what a terrible place to eat."/>
-                <Rating username="emdawg" stars="1" ratingtext="I'm disappointed in the lack of oil variety. I am strictly vegan and was startled that this company does not offer natural, organic peanut oil."/>
                 {reviewsList ? reviewsList.map((review)=>(
                     <Rating username = {review.username} stars = {review.stars} ratingtext = {review.reviewtext}/>
                 )) : ''}
                 <Card className="reviewsubmition">
-                    Leave us a review!
+                    Leave us a review! (But please keep it appropriate, Connor)
                     <br></br>
                     <br></br>
                     User:

@@ -4,7 +4,7 @@ import cursed from './cursed_baby.gif'
 export default function Home() {
     return (
         <div>
-            <img src={cursed}/>
+            <img src={cursed} alt="why do we have a creepy baby gif here?"/>
         </div>
     )
 }
