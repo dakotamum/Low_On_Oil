@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import {useEffect} from 'react'
 import Rating from './Rating'
-import firebase from './firebase/firebaseConfig'
+import firebase from '../firebase/firebaseConfig'
 import { Card } from 'react-bootstrap'
-import './reviews.css'
+import '../styles/reviews.css'
 
 export default function Reviews() {
 

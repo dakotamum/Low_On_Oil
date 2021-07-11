@@ -1,5 +1,5 @@
 import React from 'react'
-import cursed from './cursed_baby.gif'
+import cursed from '../media/cursed_baby.gif'
 
 export default function Home() {
     return (

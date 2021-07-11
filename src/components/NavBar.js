@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button.js'
-import './navbar.css'
+import '../styles/navbar.css'
 
 function NavBar() {
     // check to see if the user is the admin or not.

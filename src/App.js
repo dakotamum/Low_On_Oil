@@ -1,19 +1,19 @@
 import React from 'react';
-import Login from './Login.js'
-import Signup from './Signup.js'
-import Dashboard from './Dashboard'
+import Login from './components/Login.js'
+import Signup from './components/Signup.js'
+import Dashboard from './components/Dashboard'
 import { Container } from 'react-bootstrap'
 import { AuthProvider } from "./contexts/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import PrivateRoute from './PrivateRoute'
-import ForgotPassword from './ForgotPassword'
-import UpdateProfile from './UpdateProfile'
-import Schedule from './Schedule'
-import Reviews from './Reviews'
-import NavBar from './NavBar'
-import Admin from './Admin'
-import Home from './Home'
-import './App.css';
+import PrivateRoute from './components/PrivateRoute'
+import ForgotPassword from './components/ForgotPassword'
+import UpdateProfile from './components/UpdateProfile'
+import Schedule from './components/Schedule'
+import Reviews from './components/Reviews'
+import NavBar from './components/NavBar'
+import Admin from './components/Admin'
+import Home from './components/Home'
+import './styles/app.css';
 
 class App extends React.Component{
 	render(){
