@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
-import './rating.css'
+import '../styles/rating.css'
 
 export default function Rating(props) {
 

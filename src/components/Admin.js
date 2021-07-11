@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {useEffect} from 'react'
-import './admin.css';
-import firebase from './firebase/firebaseConfig'
+import '../styles/admin.css';
+import firebase from '../firebase/firebaseConfig'
 
 
 export default function Admin() {

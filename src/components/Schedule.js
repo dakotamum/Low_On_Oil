@@ -1,6 +1,6 @@
 import React from 'react'
-import './schedule.css';
-import asians from './asian_children.PNG'
+import '../styles/schedule.css';
+import asians from '../media/asian_children.PNG'
 import ScheduleForm from './ScheduleForm'
 
 export default function Schedule() {

@@ -1,6 +1,6 @@
 import React from 'react'
-import './scheduleform.css'
-import firebase from './firebase/firebaseConfig'
+import '../styles/scheduleform.css'
+import firebase from '../firebase/firebaseConfig'
 class ScheduleForm extends React.Component{
     constructor(props){
         super(props)
